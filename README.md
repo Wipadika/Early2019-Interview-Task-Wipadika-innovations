@@ -15,6 +15,7 @@ _Here's what you need to do:_
 
 ![](images/image1.png)
 
+
     1. The Main Text should get it from the bellow API
         URL: https://cdjmy3ceu7.execute-api.ap-south-1.amazonaws.com/dev/message
 
@@ -39,8 +40,9 @@ _Here's what you need to do:_
 
         d) Display the timestamp based generated string as the Second Text as shown in the Screenshot.
 
-    5. on Refresh while getting the result show loader untill the value comes.
-
+    5. on Refresh while getting the result show loader untill the value comes as shown bellow.
+    
+![](images/image2.png)
 
 6) Once Done provide firebase commands to build, run , and deploy functions
 
