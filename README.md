@@ -77,10 +77,10 @@ _Here's what you need to do:_
 
     4. firebase function Logic : 
 
-        a) on click button Encrypt call the Rest API with type = 'encrypt' it should give the encrypted value
+        a) on click button Encrypt call the Rest API with type = 'encrypt' it should give the encrypted value using HMAC256
 
         b) on click button Decrypt call the Rest API with type = 'decrypt' it should give the original text what you sent as plain text
-        
+
 ![](images/image3.png)
 
 ![](images/image1.png)
@@ -88,6 +88,7 @@ _Here's what you need to do:_
         d) All the values you should get from the API
 
     5. on Pressing Refresh Button while getting the result show loader untill the value comes as shown bellow.
+    6. on clicking refresh button only the component should reload not the whole page
 
 ![](images/image2.png)
 
