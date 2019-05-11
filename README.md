@@ -14,7 +14,7 @@ _Here's what you need to do:_
 
     c. React Native
 
-    
+
 
 3) Task: Make The Component as shown bellow
 
@@ -26,7 +26,17 @@ _Here's what you need to do:_
 
         Method: get
 
-        Auth: x-api-key : 1Vt72wYzBu2VGbdTVuC96YGB8mEMOkY6B2OqsSyb
+        Auth Headers => x-api-key : 1Vt72wYzBu2VGbdTVuC96YGB8mEMOkY6B2OqsSyb
+
+        Response => 
+        
+                {
+                    "statusCode": 200,
+                    "status": "success",
+                    "data": {
+                        "message": "rpZpxwZGzezFuJrLCgrL"
+                    }
+                }
 
     2. The Main Text Should Refresh on Refresh button, or everytime window reloads
 
