@@ -47,9 +47,11 @@ _Here's what you need to do:_
 
             type : 'encrypt', // or 'decrypt'
 
-            plain_text : 'Hello World', // plain text
+            plain_text : 'Hello World', // plain text if encrypt
 
-            secret : 'ABCD001'
+            secret : 'ABCD001',
+
+            cipher_text : '' // if type is decrypt provide ciphertext
 
         }
 
@@ -85,7 +87,7 @@ _Here's what you need to do:_
 
 ![](images/image2.png)
 
-6) Once Done provide firebase commands to build, run , and deploy functions
+6) Once Done provide firebase commands to build, run and deploy.
 
 7) ZIP the folder and send it to dev@wipadika.com
 
