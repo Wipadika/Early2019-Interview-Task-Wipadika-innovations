@@ -17,19 +17,14 @@ _Here's what you need to do:_
 
 
 3) Task: Make The Component as shown bellow
-
 ![](images/image3.png)
 
-
-    1. The Main Text should get it from the bellow API
+    a The Main Text should get it from the bellow API :
+     ```json
         URL: https://cdjmy3ceu7.execute-api.ap-south-1.amazonaws.com/dev/message
-
         Method: get
-
         Auth Headers => x-api-key : 1Vt72wYzBu2VGbdTVuC96YGB8mEMOkY6B2OqsSyb
-
         Response => 
-        
                 {
                     "statusCode": 200,
                     "status": "success",
@@ -37,58 +32,53 @@ _Here's what you need to do:_
                         "message": "rpZpxwZGzezFuJrLCgrL"
                     }
                 }
+     ```
+    
+   2. The Main Text Should Refresh on clicking Refresh button, on refresh only the particular MainText compnent should load
 
-    2. The Main Text Should Refresh on clicking Refresh button, and everytime window reloads
-
-    3. create REST API using firebase cloud functions:
-
+   3. create REST API using firebase cloud functions:
+        ```json
         Method: post
         Req : {
-
             type : 'encrypt', // or 'decrypt'
-
             plain_text : 'Hello World', // plain text if encrypt
-
             secret : 'ABCD001',
-
             cipher_text : '' // if type is decrypt provide ciphertext
-
         }
 
         // IF type is encrypt show encrypted text
-
         Res : {
-
             statusCode: '200',
-        
             status: 'success',
-
             cipherText: '12n3hbubhbah2mlkaAmKkkcksksznk'
-
         }
-
         // IF type is decrypt show decrypted text
-
             Res : {
-                        statusCode: '200',
-                        status: 'success',
-                        plainText: 'Hello world'
-                    }
+                    statusCode: '200',
+                    status: 'success',
+                    plainText: 'Hello world'
+                   }
+       ```
 
     4. firebase function Logic : 
 
         a) on click button Encrypt call the Rest API with type = 'encrypt' it should give the encrypted value using HMAC256
 
         b) on click button Decrypt call the Rest API with type = 'decrypt' it should give the original text what you sent as plain text
+        
+        c) All the values you should get from the API 
+        
+    5. on Pressing Refresh Button while getting the result show loader untill the value comes as shown bellow.
+    
+    6. on clicking refresh button only the component should reload not the whole page
 
 ![](images/image3.png)
 
 ![](images/image1.png)
 
-        d) All the values you should get from the API
+       
 
-    5. on Pressing Refresh Button while getting the result show loader untill the value comes as shown bellow.
-    6. on clicking refresh button only the component should reload not the whole page
+    
 
 ![](images/image2.png)
 
