@@ -36,26 +36,26 @@ _Here's what you need to do:_
 
    3. create REST API using firebase cloud functions:
         ```json
-        Method: post
+        Method: "post",
         Req : {
-            type : 'encrypt', // or 'decrypt'
-            plain_text : 'Hello World', // plain text if encrypt
-            secret : 'ABCD001',
-            cipher_text : '' // if type is decrypt provide ciphertext
-        }
+            "type" : "encrypt", // or 'decrypt'
+            "plain_text" : "Hello World", // plain text if encrypt
+            "secret" : "ABCD001",
+            "cipher_text" : "" // if type is decrypt provide ciphertext
+        },
 
         // IF type is encrypt show encrypted text
         Res : {
-            statusCode: '200',
-            status: 'success',
-            cipherText: '12n3hbubhbah2mlkaAmKkkcksksznk'
-        }
+            "statusCode": 200,
+            "status": "success",
+            "cipherText": "12n3hbubhbah2mlkaAmKkkcksksznk"
+        },
         // IF type is decrypt show decrypted text
-            Res : {
-                    statusCode: '200',
-                    status: 'success',
-                    plainText: 'Hello world'
-                   }
+            "Res" : {
+                    "statusCode": "200",
+                    "status": "success",
+                    "plainText": "Hello world"
+                   },
        ```
    
    4. firebase function Logic : 
