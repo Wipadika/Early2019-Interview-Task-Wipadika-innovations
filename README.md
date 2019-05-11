@@ -18,7 +18,7 @@ _Here's what you need to do:_
 
 3) Task: Make The Component as shown bellow
 
-![](images/image1.png)
+![](images/image3.png)
 
 
     1. The Main Text should get it from the bellow API
@@ -38,24 +38,50 @@ _Here's what you need to do:_
                     }
                 }
 
-    2. The Main Text Should Refresh on Refresh button, or everytime window reloads
+    2. The Main Text Should Refresh on clicking Refresh button, and everytime window reloads
 
-    3. create firebase functions using :
+    3. create REST API using firebase cloud functions:
 
-        a. firebase functions (cloud functions: rest)
+        Method: post
+        Req : {
 
+            type : 'encrypt', // or 'decrypt'
+
+            plain_text : 'Hello World', // plain text
+
+            secret : 'ABCD001'
+
+        }
+
+        // IF type is encrypt show encrypted text
+
+        Res : {
+
+            statusCode: '200',
+        
+            status: 'success',
+
+            cipherText: '12n3hbubhbah2mlkaAmKkkcksksznk'
+
+        }
+
+        // IF type is decrypt show decrypted text
+
+            Res : {
+                        statusCode: '200',
+                        status: 'success',
+                        plainText: 'Hello world'
+                    }
 
     4. firebase function Logic : 
 
-        a) on calling the function it shoud generate a string based on timestamp
+        a) on click button Encrypt call the Rest API with type = 'encrypt' it should give the encrypted value
 
-        b) on refresh string should change
+        b) on click button Decrypt call the Rest API with type = 'decrypt' it should give the original text what you sent as plain text
 
-        c) All the strings has to be diffrent upon the timestamp
+        d) All the values you should get from the API
 
-        d) Display the timestamp based generated string as the Second Text as shown in the Screenshot.
-
-    5. on Refresh while getting the result show loader untill the value comes as shown bellow.
+    5. on Pressing Refresh Button while getting the result show loader untill the value comes as shown bellow.
 
 ![](images/image2.png)
 
