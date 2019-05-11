@@ -7,9 +7,14 @@ _Here's what you need to do:_
 1) Clone this repository. **(DO NOT PUBLICLY FORK IT and DO NOT POST SOLUTIONS ONLINE)**
 
 2) Choose one to perform the task
+
     a. ReactJs
+
     b. AngularJs
+
     c. React Native
+
+    
 
 3) Task: Make The Component as shown bellow
 
@@ -41,7 +46,7 @@ _Here's what you need to do:_
         d) Display the timestamp based generated string as the Second Text as shown in the Screenshot.
 
     5. on Refresh while getting the result show loader untill the value comes as shown bellow.
-    
+
 ![](images/image2.png)
 
 6) Once Done provide firebase commands to build, run , and deploy functions
