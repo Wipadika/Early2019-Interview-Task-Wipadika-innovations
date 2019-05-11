@@ -81,6 +81,8 @@ _Here's what you need to do:_
 
         b) on click button Decrypt call the Rest API with type = 'decrypt' it should give the original text what you sent as plain text
 
+        ![](images/image1.png)
+
         d) All the values you should get from the API
 
     5. on Pressing Refresh Button while getting the result show loader untill the value comes as shown bellow.
