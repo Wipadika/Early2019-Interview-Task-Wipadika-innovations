@@ -2,7 +2,15 @@
 
 >We love people who like learning new things and thinking in the abstract. This task (hopefully) helps you discover and few new services and help illustrate some of your front end skills to us.
 
-_Here's what you need to do:_
+### What we are looking for
+
+1) Task Functionality as described. 
+
+2) Code Quality
+
+3) Comments & Approach
+
+## Here's what you need to do:
 
 1) Clone this repository. **(DO NOT PUBLICLY FORK IT and DO NOT POST SOLUTIONS ONLINE)**
 
@@ -13,8 +21,6 @@ _Here's what you need to do:_
     b. AngularJs
 
     c. React Native
-
-
 
 3) Task: Make The Component as shown bellow
 ![](images/image3.png)
